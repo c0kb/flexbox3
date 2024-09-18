@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .kontener {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fejlec {
+            display: flex;
+            justify-content: flex-start;
+            background-color: purple;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .gomb {
+            width: 50px;
+            height: 25px;
+            background-color: cyan;
+        }
+
+        .foresz {
+            display: flex;
+            flex: 1;
+            background-color: white;
+        }
+
+        .baloldal {
+            background-color: green;
+            flex: 0.3;
+        }
+
+        .jobboldal {
+            background-color: yellow;
+            flex: 0.7;
+        }
+
+        .lablec {
+            background-color: grey;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kontener">
+        <div class="fejlec">
+            <div class="gomb"></div>
+            <div class="gomb"></div>
+            <div class="gomb"></div>
+            <div class="gomb"></div>
+        </div>
+        <div class="foresz">
+            <div class="baloldal"></div>
+            <div class="jobboldal"></div>
+        </div>
+        <div class="lablec"></div>
+    </div>
+</body>
+</html>

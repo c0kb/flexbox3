@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4d7b0;
+        }
+
+        .kontener {
+            width: 1024px;
+            height: 512px;
+            background-color: #f4d7b0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .sor {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .cian {
+            background-color: cyan;
+            width: 600px;
+            height: 80px;
+        }
+
+        .narancs {
+            background-color: orange;
+            width: 80px;
+            height: 300px;
+        }
+
+        .vilagos-barna {
+            background-color: #f4d7b0;
+            width: 20px;
+            height: 300px;
+        }
+
+        .piros {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            margin-left: 50px;
+        }
+
+        .vilagos-barna2 {
+            background-color: #f4d7b0;
+            width: 20px;
+            height: 300px;
+        }
+
+        .lila {
+            background-color: purple;
+            width: 80px;
+            height: 300px;
+            margin-left: 50px;
+        }
+
+        .kek {
+            background-color: blue;
+            width: 600px;
+            height: 40px;
+        }
+
+        .fekete {
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kontener">
+        <div class="sor">
+            <div class="cian"></div>
+        </div>
+        <div class="sor">
+            <div class="narancs"></div>
+            <div class="vilagos-barna"></div>
+            <div class="piros"></div>
+            <div class="vilagos-barna2"></div>
+            <div class="lila"></div>
+        </div>
+        <div class="sor">
+            <div class="kek"></div>
+        </div>
+        <div class="fekete"></div>
+    </div>
+</body>
+</html>
